@@ -86,8 +86,7 @@ Projects a 3D rocket ship floating above the center of the checkerboard. The roc
 ### Task 7 - Detect Robust Features
 Applies the Harris corner detector to a live video stream. The detection threshold is adjustable in real time using `+` and `-` keys, allowing experimentation with detection sensitivity.
 
-<img src="images/task7_low.png" width="400"/><img src="images/task7_medium.png" width="400"/>
-<img src="images/task7_high.png" width="400"/>
+<img src="images/task7_low.png" width="200"/><img src="images/task7_medium.png" width="200"/><img src="images/task7_high.png" width="200"/>
 
 **Controls:**
 - `+` — increase threshold (fewer corners)
