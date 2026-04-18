@@ -41,7 +41,7 @@ g++ -std=c++17 <filename>.cpp -o <output> $(pkg-config --cflags --libs opencv4)
 ### Task 1 - Detect and Extract Target Corners
 Detects the internal corners of a 9x6 OpenCV checkerboard in real time using `findChessboardCorners` and refines them to sub-pixel accuracy using `cornerSubPix`.
 
-<img src="images/task1_corners.png" width="500"/>
+<img src="images/task1_corners.png" width="400"/>
 
 ---
 
@@ -53,8 +53,7 @@ Collects calibration frames by pressing `s`, then runs the Zhang calibration met
 - Principal point: (327.62, 243.75)
 - RMS reprojection error: 1.28 px
 
-<img src="images/task2_calibration.png" width="500"/>
-<img src="images/task3_results.png" width="500"/>
+<img src="images/task2_calibration.png" width="400"/><img src="images/task3_results.png" width="400"/>
 
 **Controls:**
 - `s` — save current frame (board must be detected)
@@ -72,21 +71,21 @@ Loads `camera_params.yml` and uses `solvePnP` to compute the board's rotation an
 ### Task 5 - Project Outside Corners and 3D Axes
 Extends Task 4 by projecting the four outer board corners and a set of 3D coordinate axes (X=red, Y=green, Z=blue) onto the image using `projectPoints`.
 
-<img src="images/task5_axes.png" width="500"/>
+<img src="images/task5_axes.png" width="400"/>
 
 ---
 
 ### Task 6 - Create a Virtual Object
 Projects a 3D rocket ship floating above the center of the checkerboard. The rocket consists of a rectangular body (cyan), a nose cone (yellow), and two asymmetric fins (red and green) — all constructed from 3D line segments projected into image space.
 
-<img src="images/task6_rocket.png" width="500"/>
+<img src="images/task6_rocket.png" width="400"/>
 
 ---
 
 ### Task 7 - Detect Robust Features
 Applies the Harris corner detector to a live video stream. The detection threshold is adjustable in real time using `+` and `-` keys, allowing experimentation with detection sensitivity.
 
-<img src="images/task7_low.png" width="200"/><img src="images/task7_medium.png" width="200"/><img src="images/task7_high.png" width="200"/>
+<img src="images/task7_low.png" width="300"/><img src="images/task7_medium.png" width="300"/><img src="images/task7_high.png" width="300"/>
 
 **Controls:**
 - `+` — increase threshold (fewer corners)
